@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternTrack - Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading p-3">
+                <img src="https://via.placeholder.com/30" alt="Logo" class="mr-2 rounded">
+                InternTrack
+            </div>
+            <div class="list-group list-group-flush">
+                <div class="list-group-item list-group-item-action bg-light font-weight-bold text-secondary">MAIN</div>
+                <a href="index.html" class="list-group-item list-group-item-action bg-light active">
+                    <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+                </a>
+                <a href="interns.html" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-users mr-2"></i> Interns
+                </a>
+                <div class="list-group-item list-group-item-action bg-light font-weight-bold text-secondary mt-3">SETTINGS</div>
+                <a href="profile.html" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-user-circle mr-2"></i> Profile
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                </a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <h2 class="ml-3 mb-0">Dashboard</h2>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <span class="navbar-text mr-3">Saturday, May 17, 2025</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="container-fluid p-4">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow-sm border-left-primary h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Total Interns</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-users fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow-sm border-left-success h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                            Active Interns</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">3</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-user-tie fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow-sm border-left-info h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                            Completed Interns</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">2</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-graduation-cap fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Recent Interns</h6>
+                        <a href="interns.html" class="text-decoration-none">View All</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="recentInternsTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>NAMA</th>
+                                        <th>NIM</th>
+                                        <th>KAMPUS</th>
+                                        <th>STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="rounded-circle bg-primary text-white d-inline-flex justify-content-center align-items-center mr-2" style="width: 30px; height: 30px;">D</div> SHAFA AFRIEZA PUTERI</td>
+                                        <td>24.01.5199</td>
+                                        <td>Universitas Amikom Yogyakarta</td>
+                                        <td><span class="badge badge-success">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="rounded-circle bg-info text-white d-inline-flex justify-content-center align-items-center mr-2" style="width: 30px; height: 30px;">S</div> ERVINA</td>
+                                        <td>24.01.5268</td>
+                                        <td>Universitas Amikom Yogyakarta</td>
+                                        <td><span class="badge badge-success">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="rounded-circle bg-warning text-white d-inline-flex justify-content-center align-items-center mr-2" style="width: 30px; height: 30px;">J</div> RESTU NEVIA</td>
+                                        <td>24.01.5196</td>
+                                        <td>Universitas Amikom Yogyakarta</td>
+                                        <td><span class="badge badge-success">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="rounded-circle bg-danger text-white d-inline-flex justify-content-center align-items-center mr-2" style="width: 30px; height: 30px;">M</div> SALSABILLA AURILLIA </td>
+                                        <td>24.01.5194</td>
+                                        <td>Universitas Amikom Yogyakarta</td>
+                                        <td><span class="badge badge-secondary">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="rounded-circle bg-success text-white d-inline-flex justify-content-center align-items-center mr-2" style="width: 30px; height: 30px;">J</div> ASTRI WAHYU </td>
+                                        <td>24.01.5174</td>
+                                        <td>Universitas Amikom Yogyakarta</td>
+                                        <td><span class="badge badge-secondary">Completed</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>

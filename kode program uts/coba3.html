@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Settings - InternTrack</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .sidebar {
+      height: 100vh;
+      background-color: #ffffff;
+      border-right: 1px solid #dee2e6;
+    }
+
+    .sidebar .nav-link.active {
+      background-color: #e9ecef;
+      font-weight: bold;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .camera-icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #6c63ff;
+      color: #fff;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-2 d-none d-md-block sidebar py-4">
+        <div class="text-center mb-4">
+          <h5>InternTrack</h5>
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Interns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-10 ml-sm-auto px-4 py-4">
+        <h2>Profile Settings</h2>
+        <div class="card p-4 mt-3">
+          <div class="d-flex align-items-center mb-4">
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/100" class="profile-img" alt="Admin User">
+              <span class="camera-icon"><i class="fas fa-camera"></i></span>
+            </div>
+            <div class="ml-3">
+              <h5 class="mb-0">Putri Afrieza</h5>
+              <small class="text-muted">Mahasiswa</small>
+            </div>
+          </div>
+
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Nama Depan</label>
+                <input type="text" class="form-control" value="Putri">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Nama Belakang</label>
+                <input type="text" class="form-control" value="Afrieza">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Email</label>
+                <input type="email" class="form-control" value="putriafrieza@students.amikom.ac.id">
+              </div>
+              <div class="form-group col-md-6">
+                <label>No Hp</label>
+                <input type="text" class="form-control" value="085601449226">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Keterangan</label>
+              <textarea class="form-control" rows="3">Isi Sesuai Kebutuhan</textarea>
+            </div>
+            <button type="button" class="btn btn-secondary">Batal</button>
+            <button type="submit" class="btn btn-primary">Simpan perubahan</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
